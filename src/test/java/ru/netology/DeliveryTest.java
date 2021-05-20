@@ -28,7 +28,7 @@ class DeliveryTest {
         $("[data-test-id=city] input").setValue(DataHelper.getNewCity());
         $("[data-test-id='date'] input")
                 .sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
-        String dateFirst = DataHelper.getNewDate(0);
+        String dateFirst = DataHelper.getNewDate(3);
         $("[data-test-id='date'] input").setValue(dateFirst);
         $("[data-test-id='name'] input").setValue(DataHelper.getNewName());
         $("[data-test-id='phone'] input").setValue(DataHelper.getNewPhoneNumber());
